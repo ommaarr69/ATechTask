@@ -1,0 +1,15 @@
+<div class="row justify-content-between p-2">
+    <div class="col-md-6">
+        <div class="pe-4">
+            <h6 class="pe-4">إحصائيات إستخدام القسيمة</h6>
+            <span class="pe-4">05 يوليو , 2023 - 05 أغسطس , 2023</span>
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex justify-content-center ">
+        <p-dropdown [options]="periods" [(ngModel)]="selectedPeriod" optionLabel="name" optionValue="id"></p-dropdown>
+    </div>
+</div>
+<div class="row">
+    <div #chartContainer id="chart-container" style="height: 300px;"> </div>
+</div>

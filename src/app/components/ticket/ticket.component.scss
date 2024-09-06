@@ -1,0 +1,29 @@
+.dashed-line {
+    border-top: 2px dashed #fff;
+    position: relative;
+    margin: 10px 0;
+}
+
+.half-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px; /* Adjust this to align with the line */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.half-circle.left {
+    left: 0; /* Position the left circle at the start of the line */
+}
+
+.half-circle.right {
+    right: -4%; /* Position the right circle at the end of the line */
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
